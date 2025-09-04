@@ -51,7 +51,7 @@ export const updateTasks = async (id, name, completed ) => {
             id
         },
         ExpressionAttributeNames: {
-            "#name": "na,e"
+            "#name": "name"
         },
         UpdateExpression: "set #name = :name, completed= :c",
         ExpressionAttributeValues: {
